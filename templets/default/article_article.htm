@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<link href="/css/global.css" rel="stylesheet" rev="stylesheet" />
+<link href="/css/lib.css" rel="stylesheet" rev="stylesheet" />
+<link href="/css/style.css" rel="stylesheet" rev="stylesheet" />
+<script src="/js/jq_min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+<script src="/js/com_function.js" type="text/javascript"></script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="bg_3">
+	<div class="web_title_en">COSTOMER SHARE</div>
+	<div class="web_title_cn">{dede:field.typename/} </div>
+</div>
+<div class="b_con">
+	<div class="juzhong">
+    	<div class="con_1" style="margin-top:20px;">
+            {dede:field.body/}
+		</div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}
+<!--底部-->
+<script>
+var $img = $("#f2_left ul li");
+$img.hover(function(){
+	$index = $img.index(this);
+	$img.eq($index).css("background","#6594D3").siblings("li").css("background","#363942");
+	}, function() {
+		$img.css("background","#363942");
+	});
+
+
+$("#toTop").mousedown(function(){
+	$("body, html").animate({"scrollTop":0}, "slow");
+})
+$("#toTop").mouseup(function(){
+	$("body, html").stop();
+})
+
+$("#toBottom").mousedown(function(){
+	var height = $(window).scroll().height();
+	var heightEx = $(document).scroll().height();
+			$("body, html").animate({"scrollTop":heightEx}, "3000");
+	})
+$("#toBottom").mouseup(function(){
+	$("body, html").stop();
+})
+</script></body>
+</html>

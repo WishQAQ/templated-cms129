@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>美丽之刚法国小巷-我的网站</title>
+<link href="/css/global.css" rel="stylesheet" rev="stylesheet" />
+<link href="/css/lib.css" rel="stylesheet" rev="stylesheet" />
+<link href="/css/style.css" rel="stylesheet" rev="stylesheet" />
+<script src="/js/jq_min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+<script src="/js/com_function.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="top_bg">
+    <div class="juzhong">
+        <div class="logo">
+            <a href="index.php">
+                <img src="/images/logo.png" />
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+				
+				<li><a href="/">首页</a></li>
+                
+				<li><a href="/a/about/">关于我们</a></li>
+				
+				<li><a href="/a/chanpin/">产品中心</a></li>
+				
+				<li><a href="/a/lvxing/">旅行分享</a></li>
+				
+				<li><a href="/a/news/">新闻动态</a></li>
+				
+				<li><a href="/a/lianxi/">联系我们</a></li>
+				
+      
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>    
+</div>
+<div class="bg_3">
+	<div class="web_title_en">COSTOMER SHARE</div>
+	<div class="web_title_cn">旅行分享 </div>
+</div>
+<div class="b_con">
+	<div class="juzhong">
+    	<div class="con_1" style="margin-top:20px;">
+            更新中
+		</div>
+    </div>
+</div>
+<div class="is_right"> <a href="javascript://" id="toTop" class="top"><img src="/images/top.gif" /></a> <a href="javascript://" id="toBottom" class="bottom"><img src="/images/bottom.gif" /></a> </div>
+<div class="footer">
+  <div class="juzhong">
+    <div class="f_1">
+      <div class="f1_left">Email: zhanoo@admin.com</div>
+      <div class="f1_right">Phone: 020-0000000    /00000000</div>
+      <div class="clear"></div>
+    </div>
+    <div class="index_bottom"></div>
+    <div class="f_2">
+      <div class="f2_left" id="f2_left">
+        <ul>
+          <li> <a href="http://wpa.qq.com/msgrd?v=3&uin=1234567&site=qq&menu=yes" target="_blank"><img src="/images/qq.png" class="img_1" /></a> </li>
+          <li> <a href="http://weibo.com/1234567" target="_blank"><img src="/images/xlwb.png" class="img_2"  /></a> </li>
+          <li> <a href="http://1234567.qzone.qq.com/" target="_blank"><img src="/images/qqkj.png" class="img_3"  /></a> </li>
+          <li> <a href="http://wx.qq.com" target="_blank"><img src="/images/wx.png" class="img_4"  /></a> </li>
+          <li> <a href="http://t.qq.com/1234567" target="_blank"><img src="/images/txwb.png" class="img_5"  /></a> </li>
+        </ul>
+      </div>
+      <div class="f2_right"> <img src="/images/code.gif" /> </div>
+      <div class="clear"></div>
+    </div>
+    <div class="index_bottom"></div>
+    <div class="f_3">
+      <div class="juzhong">
+        <div class="f3_pany">Copyright &copy; 2002-2011 DEDECMS. 站窝窝 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>.  <a href="">网站统计</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部-->
+<script>
+var $img = $("#f2_left ul li");
+$img.hover(function(){
+	$index = $img.index(this);
+	$img.eq($index).css("background","#6594D3").siblings("li").css("background","#363942");
+	}, function() {
+		$img.css("background","#363942");
+	});
+
+
+$("#toTop").mousedown(function(){
+	$("body, html").animate({"scrollTop":0}, "slow");
+})
+$("#toTop").mouseup(function(){
+	$("body, html").stop();
+})
+
+$("#toBottom").mousedown(function(){
+	var height = $(window).scroll().height();
+	var heightEx = $(document).scroll().height();
+			$("body, html").animate({"scrollTop":heightEx}, "3000");
+	})
+$("#toBottom").mouseup(function(){
+	$("body, html").stop();
+})
+</script></body>
+</html>
